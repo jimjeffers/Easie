@@ -1,5 +1,11 @@
+# Easie.coffee (https://github.com/jimjeffers/Easie)
+# Project created by J. Jeffers
+#
 # Robert Penner's Easing Equations in CoffeeScript
 # http://robertpenner.com/easing/
+#
+# DISCLAIMER: Software provided as is with no warranty of any type. 
+# Don't do bad things with this :)
 
 class @Easie
   
