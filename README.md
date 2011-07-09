@@ -15,18 +15,22 @@ Usage is quite 'easie' (haha). These are just timing functions so you can use th
 
 For example:
 
-`Easie.linearOut(time,begin,change,duration)`
-`Easie.elasticOut(time,begin,change,duration)`
-`Easie.backInOut(time,begin,change,duration)`
+```javascript
+Easie.linearOut(time,begin,change,duration)
+Easie.elasticOut(time,begin,change,duration)
+Easie.backInOut(time,begin,change,duration)
+```
 
 etc... All functions work pretty much identically to Penner's. For a complete tutorial on how they work and how to use them see the sample chapter from [Robert's book](http://robertpenner.com/easing/penner_chapter7_tweening.pdf "The Chapter From Robert Penner's Book on Easing Equations").
 
 For instance if I wanted to do an elastic ease from 300px down to 600px on the screen I would use the easing function as so:
 
-`duration = 1000`
-`startY = 300`
-`endY = 600`
-`while duration > 0`
-`   currentTime = -(1-duration)`
-`   y = Easie.elasticOut(currentTime,startY,startY-endY,duration)`
-`   duration -= 1`
+```coffeescript
+duration = 1000
+startY = 300
+endY = 600
+while duration > 0
+   currentTime = -(1-duration)
+   y = Easie.elasticOut(currentTime,startY,startY-endY,duration)
+   duration -= 1
+```
